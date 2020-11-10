@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@id/text_xm"
+    tools:context="com.nbpt.smartcity.xianghdiu">
+
+    <TextView
+        android:id="@+id/text_xm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="用户名" />
+
+    <EditText
+        android:id="@+id/edit_xm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_xm"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/text_xb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_xm"
+        android:layout_below="@+id/edit_xm"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/edit_xb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text_xb"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_xb"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_qd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/but_qx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>
